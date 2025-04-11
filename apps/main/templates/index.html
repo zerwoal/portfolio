@@ -1,0 +1,86 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<div class="contact">
+    <div class="contact-container">
+        <video
+            src="{% static 'video/contact.mp4' %}"
+            autoplay
+            loop
+            muted
+            playsinline
+            preload="auto"
+        ></video>
+        <div class="contact-form">
+            <img id="close-contact" src="{% static 'icons/close.png' %}" alt="" />
+            <h1 class="color-white" >Contactez-moi</h1>
+            <form method="POST" action="">
+                <ul class="form-list">
+                    {% csrf_token %}
+                    {{contact_form.as_ul}}
+                    <button type="submit" id="submit-contact">Envoyer</button>
+                </ul>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!-- main presentation part -->
+<div class="main-container">
+    <div class="scheme title-container bd-rad-20">
+        <h1 class="uppercase s3-1 ft-lato ft-size-20 txt-center" id="title">
+            Polleux
+        </h1>
+        <div class="scheme">
+            <h3 class="ft-poppins scheme txt-center" id="dynamic-sentence">
+                Developpeur spécialisé en
+                <span class="ft-poppins capitalize" id="dynamic-word"
+                    >recherche scientifique</span
+                >
+            </h3>
+        </div>
+        <!-- From Uiverse.io by AlimurtuzaCodes -->
+        <button class="btn" id="contact-btn">
+            <span class="text ft-lato">Contactez-moi</span>
+        </button>
+    </div>
+</div>
+
+<!-- part displaying all the companies that has trusted me -->
+<div class="page-part">
+    <div class="page-container" id="companies-container">
+        <h3 id="companies-title" class="scheme ft-poppins">J'ai travaillé avec <a class="scheme ft-roicamonta color-blue" href="{% url 'experiences' %}" id="companies-shortcut">ces entreprises</a> :</h3>
+        <ul class="companies-list">
+            {% for experience in experiences %}
+            <li class="scheme company-logo">
+                <a href="{{experience.website}}"
+                    ><img
+                        src="{{experience.logo.url}}"
+                        alt="{{experience.name}}"
+                /></a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+<!-- introduction video -->
+<div class="page-part" id="introduction-video">
+    <h1>Bienvenue sur mon portfolio</h1>
+    <div id="intro-video-container">
+        <video
+            src="{% static 'video/home.mp4' %}"
+            autoplay
+            muted
+            loop
+            class="video"
+        ></video>
+    </div>
+</div>
+
+<!-- part displaying my life experience -->
+<div id="about-part" class="scheme page-part bg-grey">
+    {% include 'about.html' %}
+</div>
+
+{% endblock %}

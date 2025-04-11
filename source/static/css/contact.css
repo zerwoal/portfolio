@@ -1,0 +1,143 @@
+.contact{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: #0000005f;
+}
+
+.contact-container{
+    display: flex;
+    background-color: #202b35;
+    border-radius: 25px;
+    width: 90%;
+    height: 80%;
+}
+
+.contact-container video{
+    width: 50%;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    object-fit: cover;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+#close-contact{
+    width: 2rem;
+    margin: 1.5rem;
+    align-self: flex-end;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+#close-contact:hover{
+    background-color: red;
+}
+
+.contact-form h1{
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1.5rem;
+}
+
+form .input{
+    background-color: aliceblue;
+    border-radius: 25px;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    outline: none;
+    border: none;
+}
+
+.form-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    outline: none;
+    border: none;
+}
+
+.form-list li{
+    margin: 0.5rem;
+    padding: 0.2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border-radius: 5px;
+    width:70%;
+    background-color: #f0f8ff;
+    outline: none;
+    border: none;
+}
+
+.form-list li input{
+    width: 100%;
+    height: 100%;
+}
+
+.form-list li label{
+    display: none;
+}
+
+.contact-form textarea{
+    background: none;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 2rem;
+    height: 5rem;
+    resize: none;
+    overflow-y: scroll;
+}
+
+.contact-form button{
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    align-self: flex-start;
+    background-color: aliceblue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .contact-container{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+    }
+    .contact-container video{
+        display: none;
+    }
+    .contact-form{
+        width: 100%;
+    }
+
+    #close-contact{
+        align-self: center;
+    }
+}

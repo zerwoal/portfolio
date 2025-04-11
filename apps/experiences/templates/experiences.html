@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="page-part">
+    <div class="page-container">
+        <div class="video-container">
+            <h1 class="color-white">Experiences</h1>
+            <video src="{% static 'video/experiences.mp4' %}" type="video/mp4" autoplay loop muted playsinline preload="auto"></video>
+        </div>
+    </div>
+</div>
+
+<div class="page-part">
+    <div class="page-container">
+        <h1>Avis</h1>
+        {% for opinion in opinions %}
+            <div class="opinion-card">
+                <img src="{{opinion.image.url}}" alt="">
+                <h3>{{opinion.name}}</h3>
+                <p>{{opinion.description}}</p>
+                <p>Chez {{opinion.experience}}</p>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="page-part">
+    <div class="page-container">
+        <h1>Entreprises</h1>
+        {% for experience in experiences %}
+            <div class="experience-card">
+                <img src="{{experience.logo.url}}" alt="">
+                <h3>{{experience.name}}</h3>
+                <p>À {{experience.location}}</p>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="page-part">
+        <div class="page-container">
+            <div class="video-container">
+                <h1 class="color-white">Compétences</h1>
+                <video src="{% static 'video/skills.mp4' %}" type="video/mp4" autoplay loop muted playsinline preload="auto"></video>
+            </div>
+        </div>
+    </div>
+    <div class="page-part bg-grey" id="skills">
+        <div class="page-container">
+            <div class="grid-area col-2">
+                {% for skill in skills %}
+                    <a href="{{skill.get_absolute_url}}">
+                        <div class="skill grid-card">
+                            <p class="title">{{skill.name}}</p>
+                            <img src="{{skill.image.url}}" alt="{{skill.name}}">
+                        </div>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

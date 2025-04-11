@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="page-part">
+        <div class="page-container">
+            <div class="video-container">
+                <h1 class="color-white">Projets</h1>
+                <video src="{% static 'video/projects.mp4' %}" type="video/mp4" autoplay loop muted playsinline preload="auto"></video>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-part">
+        <div class="page-container">
+            
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,96 @@
+/* navigation bar */
+
+:root {
+    --navbar-height: 5rem;
+}
+
+.nav-bar{
+    width: 100%;
+    height: var(--navbar-height);
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    box-shadow: 0 0 10px #0000001a;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+.nav-bar-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar-tools{
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar ul li{
+    margin: 0 2vw;
+}
+
+.nav-bar ul li a{
+    color: #000;
+    text-transform: uppercase;
+    transition: all 0.1s ease-in-out;
+}
+
+.nav-bar ul li a:hover{
+    color: #0000008e;
+}
+
+
+
+.nav-bar ul li .return-button{
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    z-index: 101;
+}
+
+.return {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px; /* Reduced width */
+    height: 32px; /* Reduced height */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    padding: 0; /* Remove extra padding */
+    margin: 0; /* Remove extra margin */
+}
+
+.return img {
+    width: 3rem; /* Slightly smaller icon */
+    height: 3rem;
+    margin: 0; /* Remove any default margin */
+}
+
+.return:hover {
+    transform: scale(1.1);
+}
+
+#main-icon{
+    width: 3rem;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .return{
+        display: none;
+    }
+    .nav-bar-list{
+        display: none;
+    }
+}

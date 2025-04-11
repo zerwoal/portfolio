@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="raw-page">
+    <h1>Politique de Cookies</h1>
+        <p>Nous utilisons des cookies pour améliorer votre expérience sur notre site. En poursuivant votre navigation, vous acceptez l'utilisation de ces cookies.</p>
+        
+        <h2>Types de cookies que nous utilisons :</h2>
+        <ul>
+            <li><strong>Cookies essentiels :</strong> Nécessaires au bon fonctionnement du site.</li>
+            <li><strong>Cookies analytiques :</strong> Nous aident à comprendre comment les visiteurs interagissent avec notre site.</li>
+            <li><strong>Cookies de personnalisation :</strong> Enregistrent vos préférences pour une meilleure expérience.</li>
+            <li><strong>Cookies publicitaires :</strong> Utilisés pour afficher des annonces personnalisées.</li>
+        </ul>
+        
+        <button>Accepter les cookies</button>
+        <button>Refuser les cookies</button>
+    
+        <p>Dernière mise à jour : {{update_date}}</p>
+</div>
+
+{% endblock %}

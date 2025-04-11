@@ -1,0 +1,93 @@
+/* CSS Fonts File */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gota:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantata+One:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roicamonta:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+.breeze-font {
+    font-family: 'Bree Serif', serif;
+}
+
+.ft-rubik {font-family: 'Rubik', sans-serif;}
+.ft-montserrat {font-family: 'Montserrat', sans-serif;}
+.ft-raleway {font-family: 'Raleway', sans-serif;}
+.ft-ubuntu {font-family: 'Ubuntu', sans-serif;}
+.ft-fredoka {font-family: 'Fredoka', sans-serif;}
+.ft-gota {font-family: 'Gota', sans-serif;}
+.ft-quicksand {font-family: 'Quicksand', sans-serif;}
+.ft-pt-sans {font-family: 'PT Sans', sans-serif;}
+.ft-cantata-one {font-family: 'Cantata One', sans-serif;}
+.ft-roicamonta {font-family: 'Roicamonta', sans-serif;}
+.ft-roboto {font-family: 'Roboto', sans-serif;}
+.ft-lato {font-family: 'Lato', sans-serif;}
+.ft-playfair-display {font-family: 'Playfair Display', serif;}
+.ft-source-sans-pro {font-family: 'Source Sans Pro', sans-serif;}
+.ft-merriweather {font-family: 'Merriweather', serif;}
+.ft-open-sans {font-family: 'Open Sans', sans-serif;}
+.ft-noto-sans {font-family: 'Noto Sans', sans-serif;}
+.ft-bebas-neue {font-family: 'Bebas Neue', cursive;}
+.ft-oswald {font-family: 'Oswald', sans-serif;}
+.ft-poppins {font-family: 'Poppins', sans-serif;}
+
+.ft-size-01 {font-size: 0.1em;}
+.ft-size-02 {font-size: 0.2em;}
+.ft-size-03 {font-size: 0.3em;}
+.ft-size-04 {font-size: 0.4em;}
+.ft-size-05 {font-size: 0.5em;}
+.ft-size-06 {font-size: 0.6em;}
+.ft-size-07 {font-size: 0.7em;}
+.ft-size-08 {font-size: 0.8em;}
+.ft-size-09 {font-size: 0.9em;}
+.ft-size-10 {font-size: 1em;}
+.ft-size-11 {font-size: 1.1em;}
+.ft-size-12 {font-size: 1.2em;}
+.ft-size-13 {font-size: 1.3em;}
+.ft-size-14 {font-size: 1.4em;}
+.ft-size-15 {font-size: 1.5em;}
+.ft-size-16 {font-size: 1.6em;}
+.ft-size-17 {font-size: 1.7em;}
+.ft-size-18 {font-size: 1.8em;}
+.ft-size-19 {font-size: 1.9em;}
+.ft-size-20 {font-size: 2em;}
+
+/* CSS Font Weight File */
+
+:root {
+    --weight-thin: 100;
+    --weight-extra-light: 200;
+    --weight-light: 300;
+    --weight-regular: 400;
+    --weight-medium: 500;
+    --weight-semi-bold: 600;
+    --weight-bold: 700;
+    --weight-extra-bold: 800;
+    --weight-black: 900;
+}
+
+.ft-weight-thin { font-weight: var(--weight-thin); }
+.ft-weight-extra-light { font-weight: var(--weight-extra-light); }
+.ft-weight-light { font-weight: var(--weight-light); }
+.ft-weight-regular { font-weight: var(--weight-regular); }
+.ft-weight-medium { font-weight: var(--weight-medium); }
+.ft-weight-semi-bold { font-weight: var(--weight-semi-bold); }
+.ft-weight-bold { font-weight: var(--weight-bold); }
+.ft-weight-extra-bold { font-weight: var(--weight-extra-bold); }
+.ft-weight-black { font-weight: var(--weight-black); }

@@ -1,0 +1,191 @@
+/* ==================================
+   Markdown Style - GitHub Inspired
+   Conteneur : .markdown-container
+   ================================== */
+
+   .markdown-container {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    line-height: 1.6;
+    color: #333;
+    padding: 20px;
+}
+
+/* Headings */
+.markdown-container h1, 
+.markdown-container h2, 
+.markdown-container h3, 
+.markdown-container h4, 
+.markdown-container h5, 
+.markdown-container h6 {
+    margin: 1em 0 0.5em;
+    font-weight: bold;
+    line-height: 1.25;
+}
+
+.markdown-container h1 { font-size: 2em; border-bottom: 2px solid #eaecef; padding-bottom: 0.3em; }
+.markdown-container h2 { font-size: 1.75em; border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; }
+.markdown-container h3 { font-size: 1.5em; }
+.markdown-container h4 { font-size: 1.25em; }
+.markdown-container h5 { font-size: 1em; }
+.markdown-container h6 { font-size: 0.875em; color: #6a737d; }
+
+/* Text Elements */
+.markdown-container p, 
+.markdown-container blockquote, 
+.markdown-container pre, 
+.markdown-container code, 
+.markdown-container ul, 
+.markdown-container ol, 
+.markdown-container table, 
+.markdown-container hr {
+    margin: 0.5em 0;
+}
+
+.markdown-container p {
+    margin: 0.8em 0;
+}
+
+.markdown-container blockquote {
+    padding: 0.5em 1em;
+    margin: 0.8em 0;
+    color: #6a737d;
+    border-left: 4px solid #dfe2e5;
+    background-color: #f6f8fa;
+}
+
+/* Horizontal Rule */
+.markdown-container hr {
+    margin: 1.5em 0;
+    border: 0;
+    height: 1px;
+    background: #282828;
+}
+
+/* Lists */
+.markdown-container ul, 
+.markdown-container ol {
+    padding-left: 2em;
+}
+
+.markdown-container li {
+    margin: 0.3em 0;
+}
+
+.markdown-container ul ul, 
+.markdown-container ol ol, 
+.markdown-container ul ol, 
+.markdown-container ol ul {
+    margin: 0.3em 0;
+}
+
+/* Inline Code */
+.markdown-container code {
+    background-color: #f6f8fa;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+/* Code Blocks */
+.markdown-container pre {
+    padding: 1em;
+    background-color: #f6f8fa;
+    border-radius: 6px;
+    font-size: 0.9em;
+    overflow: auto;
+}
+
+.markdown-container pre code {
+    background-color: transparent;
+    padding: 0;
+}
+
+.markdown-container pre, 
+.markdown-container code {
+    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+}
+
+/* Links */
+.markdown-container a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+.markdown-container a:hover {
+    text-decoration: underline;
+}
+
+/* Tables */
+.markdown-container table {
+    border-collapse: collapse;
+    margin: 1em 0;
+    width: 100%;
+}
+
+.markdown-container th, 
+.markdown-container td {
+    padding: 0.5em;
+    border: 1px solid #dfe2e5;
+}
+
+.markdown-container th {
+    background-color: #f6f8fa;
+    font-weight: bold;
+}
+
+/* Images */
+.markdown-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+/* Code Highlighting (Custom) */
+.markdown-container pre code {
+    display: block;
+    padding: 1em;
+    line-height: 1.4;
+    background-color: #282c34;
+    color: #ffffff;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+/* Syntax Highlighting */
+.markdown-container pre code .keyword {
+    color: #d73a49;
+}
+
+.markdown-container pre code .string {
+    color: #032f62;
+}
+
+.markdown-container pre code .comment {
+    color: #6a737d;
+    font-style: italic;
+}
+
+.markdown-container pre code .function {
+    color: #005cc5;
+}
+
+/* Blockquotes */
+.markdown-container blockquote {
+    border-left: 4px solid #dfe2e5;
+    color: #6a737d;
+    margin: 1em 0;
+    padding: 0.5em 1em;
+    background-color: #f6f8fa;
+}
+
+/* Footnotes */
+.markdown-container sup a {
+    text-decoration: none;
+    color: #0366d6;
+    font-size: 0.875em;
+}
+
+.markdown-container abbr[title] {
+    border-bottom: 1px dotted #6a737d;
+    cursor: help;
+}

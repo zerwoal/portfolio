@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+    {% load static %}
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{{index_page}} | Polleux</title>
+        <link
+            rel="shortcut icon"
+            href="{% static 'favicon.ico' %}"
+            type="image/x-icon"
+        />
+
+        <link rel="stylesheet" href="{% static 'css/contact.css' %}" />
+        <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+        <link rel="stylesheet" href="{% static 'css/breeze.css' %}" />
+        <link rel="stylesheet" href="{% static 'css/breeze-animation.css' %}" />
+        <link rel="stylesheet" href="{% static 'css/breeze-color.css' %}" />
+        <link rel="stylesheet" href="{% static 'css/breeze-font.css' %}" />
+        <link rel="stylesheet" href="{% static 'css/breeze-text.css' %}" />
+        <link rel="stylesheet" href="{% static 'css/loader.css' %}" />
+        <link rel="stylesheet" href="{% static 'css/markdown.css' %}" />
+        <link rel="stylesheet" href="{% static 'css/navbar.css' %}" />
+        <link rel="stylesheet" href="{% static 'css/video.css' %}" />
+        <link rel="stylesheet" href="{% static 'css/pages.css' %}" />
+    </head>
+
+    <body>
+        <div class="loader-container">
+            <div class="loader"></div>
+        </div>
+
+        <div class="navbar-reduced">
+            <div class="navbar-container">
+                <a href="" id="button"></a>
+            </div>
+        </div>
+
+        <header>
+            <div class="nav-bar">
+                <ul class="nav-bar-tools">
+                    <li>
+                        <a href="javascript:history.go(-1);" class="return">
+                            <img
+                                src="{% static 'icons/navbar/return.png' %}"
+                                alt="Return"
+                                id="return-image"
+                            />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'main_page' %}"
+                            ><img
+                                src="{% static 'icons/Polleux.png' %}"
+                                alt="logo"
+                                id="main-icon"
+                        /></a>
+                    </li>
+                </ul>
+                <ul class="nav-bar-list">
+                    <li><a href="{% url 'projects' %}">Projets</a></li>
+                    <li><a href="{% url 'skills' %}">Competences</a></li>
+                    <li>
+                        <a href="{% url 'certifications' %}">Certifications</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="body-content fade-in" id="body-content">
+            {% block content %} {% endblock %}
+        </div>
+
+        <footer>
+            <div class="footer-page">
+                <ul class="footer-list">
+                    <li>
+                        <ul class="footer-list-elements">
+                            <li>
+                                <a href="{% url 'footer_homepage' %}"
+                                    >Details du portfolio</a
+                                >
+                            </li>
+                            <li>
+                                <a href="{% url 'Cookie Policy' %}"
+                                    >Les cookies</a
+                                >
+                            </li>
+                            <li>
+                                <a href="{% url 'General Conditions' %}"
+                                    >Les conditions generales d'utilisation</a
+                                >
+                            </li>
+                            <li>
+                                <a href="{% url 'Privacy Chart' %}"
+                                    >La charte de confidentialite</a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                    <li><span>© 2025 Polleux | Tous droits réservés</span></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+
+    <script src="{% static 'js/breeze.js' %}" defer></script>
+    <script src="{% static 'js/loader.js' %}" defer></script>
+</html>

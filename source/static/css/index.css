@@ -1,0 +1,375 @@
+#dynamic-word {
+    font-size: 1.6rem;
+    transition: all 0.5s ease-in;
+}
+
+.main-container{
+    display: flex;
+    height: calc(100vh - 5rem);
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ff7300;
+    z-index: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+    .main-container{background-color: #011c2c;}
+}
+
+
+.title-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#title{
+    font-size: 10rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* From Uiverse.io by AlimurtuzaCodes */ 
+.btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 70vh;
+    padding: 0;
+    overflow: hidden;
+    color: #fff;
+    border: none;
+    width: 15em;
+    height: 4em;
+    border-radius: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: #1C1A1C;
+    cursor: pointer;
+    transition: all 450ms ease-in-out;
+  }
+  
+  .text {
+    font-weight: 600;
+    color: #AAAAAA;
+    font-size: medium;
+  }
+  
+  .btn:active {
+    background: linear-gradient(0deg,#A47CF3,#683FEA);
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+    inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+    0px 0px 180px 0px #9917FF;
+  }
+  
+  .btn:hover .text {
+    color: white;
+  }
+
+#contact-container{
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #0000006a;
+}
+
+#contact-form{
+    position: absolute;
+
+}
+
+
+#introduction-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+#introduction-video h1{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#introduction-video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px;
+    opacity: 0.2;
+}
+
+
+
+
+
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    #title{
+        font-size: 5rem;
+    } 
+    .title-container{
+        margin: 2rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #title{
+        font-size: 3rem;
+    } 
+}
+
+
+
+@media screen and (max-width: 800px) {
+    #-container{
+        margin: 2rem;
+        padding: 2rem;
+    }
+    #-title{
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-align: center;
+        margin: 2rem;
+    }
+    #-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #-list img{
+        width: 10rem;
+        margin: 1rem;
+    }
+    #-list img:hover{
+        transform: scale(1.1);
+    }
+    
+}
+
+
+
+@media (prefers-color-scheme: dark){
+    #-container{
+        background-color: #292929;
+    }
+}
+
+#companies-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.companies-list{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 800px) {
+    #companies-container h3{
+        font-size: 1.5rem;
+        margin: 1rem;
+        text-align: center;
+    }
+    .companies-list{
+        flex-direction: column;
+        margin: 0;
+    }
+}
+
+.company-logo{
+    margin: 1rem;
+}
+
+.company-logo img{
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+    filter: grayscale(100%);
+}
+
+.company-logo img:hover{
+    filter: grayscale(0%);
+}
+
+#about-part{
+    display: flex;
+    align-self: center;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.frame-page-part{
+    margin: 5rem;
+    border-radius: 25px;
+}
+
+.frame-left{
+    position: sticky;
+    top: 3rem;
+    width: 40%;
+}
+
+#about-video{
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+
+.text-fixed-right{
+    margin-left: 55%;
+    width: 30%;
+    top: 7rem;
+    padding: 1rem;}
+    
+.frame-page-part h1{
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.text-fixed-right h2{
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.text-fixed-right p{
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-align: justify;
+    margin-bottom: 50rem;
+}
+@media screen and (max-width: 1000px) {
+    .frame-page-part{
+        margin: 2rem;
+        border-radius: 25px;
+    }
+    
+    .frame-left{
+        position: static;
+        width: 100%;
+    }
+    .text-fixed-right{
+        margin-left: 0;
+        width: 100%;
+        top: 0;
+    }
+    .frame-page-part h1{
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .text-fixed-right p{
+        font-size: 1.2rem;
+        font-weight: 400;
+        text-align: left;
+        margin-bottom: 5rem;
+
+    }
+    #about-video{
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+        border-radius: 25px;
+        transition: all 0.5s ease-in;
+    }
+}
+
+
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+    margin: 2rem;
+}
+
+.project{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 25px;
+    transition: all 0.5s ease-in;
+    background-color: #212121;
+}
+
+.project img{
+    width: 0%;
+    object-fit: cover;
+    border-radius: 25px;
+    transition: all 0.5s ease-in;
+}
+
+.project:hover{
+    transform: scale(1.05);
+    transition: all 0.5s ease-in;
+}
+
+.project:hover img{
+    width: 100%;
+    transition: all 0.5s ease-in;
+}
+
+#skills-part{
+    display: flex;
+    align-self: center;
+    width: 100%;
+    height: 95vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #A15842;
+}

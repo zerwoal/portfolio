@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="article-container">
+    <h3>{{skill.name}} | {{skill.language}}</h3>
+    <img src="{{skill.image.url}}" alt="">
+    <h5>{{skill.libraries}}</h5>
+    <h6>Niveau : {{skill.mastery_level}}</h6>
+    <div class="markdown-container">
+        <p>{{skill.description}}</p>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="article-container">
+    <a href="{% url 'projects' %}"></a>
+    <img src="{{project.image.url}}" alt="" height="200">
+    <h1>{{project.name}}</h1>
+    <div class="markdown-container">
+        <p>{{project.markdown_html|safe}}</p>
+    </div>
+    
+    {% if project.url %}
+        <a href="{{project.url}}">Accéder au site web</a>
+    {% endif %}
+    {% if project.file %}
+        <a href="{{project.file.url}}">Telecharger le projet</a>
+    {% endif %}
+</div>
+
+{% endblock %}
